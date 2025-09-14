@@ -1,9 +1,7 @@
 // API Configuration and Service Functions
 // API Configuration and Service Functions
 // Use import.meta.env during development and process.env during build
-const API_URL = import.meta.env.VITE_API_URL?.replace(/\/+$/, '') || 
-                process.env.VITE_API_URL?.replace(/\/+$/, '') || 
-                '';
+const API_URL = import.meta.env.VITE_API_URL?.replace(/\/+$/, '') || '';
 
 // Rest of your api.ts file remains the same...
 export type LoginResponse = {
